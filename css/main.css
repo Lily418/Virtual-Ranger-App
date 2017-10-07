@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Amactic;
+  src: url('../fonts/Amatic-Bold.ttf');
+  font-weight: bold;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  font-family: "Amactic";
+  background-image:url('../img/background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 100%;
+}
+
+.question-container {
+  background: rgba(255, 255, 255, 0.6);
+  height: 50%;
+}
+
+.question-container > div {
+  height: 100%;
+}
+
+.answer-top {
+  border-bottom: 1px solid black;
+}
+
+.answer-top, .answer-bottom {
+  height: 50%
+}
+
+.question-container img  {
+  background: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  text-align: center;
+  display: block;
+}

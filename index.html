@@ -8,7 +8,7 @@
     <title>Virtual Ranger</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
@@ -20,9 +20,21 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Is There a Person In This Image?</h1>
-    <img src="img/RegentsPark335.jpg">
+  <body class="container">
+    <h1>Here's your mission ranger...</h1>
+    <div class="row question-container">
+      <div class="col-xs-6">
+      <img src="img/RegentsPark335.jpg">
+      </div>
+      <div class="col-xs-6">
+        <div class="answer-top">
+          Yes!
+        </div>
+        <div class="answer-bottom">
+          No!
+        </div>
+      </div>
+    </div>
     <i class="fa fa-check"></i> fa-check
     <i class="fa fa-times"></i> fa-times
 
@@ -31,6 +43,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
