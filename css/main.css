@@ -34,11 +34,21 @@ body {
 }
 
 .question-container img  {
-  background: white;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
   text-align: center;
   display: block;
+}
+
+.answer {
+  font-size: 30px;
+  text-align: right;
+}
+
+.answer > img {
+  width: 30%;
+  float: right;
+  height: auto;
 }
