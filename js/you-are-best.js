@@ -55,6 +55,16 @@ var circle = new ProgressBar.Circle('#progress-bar', {
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
 
+    console.log("Stepping cicle")
+    if(window.location.hash == "#img2") {
+      if(circle.value() < 0.5) {
+        if(circle._progressPath) {
+          circle.set(0.5001)
+          circle.animate(1.0)
+        }
+      }
+    }
+
     var value = Math.round(circle.value() * 100);
     if (value === 0) {
       circle.setText('');
