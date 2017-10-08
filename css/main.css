@@ -139,7 +139,8 @@ button.cross:active{
 
 .emoji-parade {
   font-size: 70px;
-  float:right;
+  text-align: center;
+  display: block;
 }
 
 .best-container {
