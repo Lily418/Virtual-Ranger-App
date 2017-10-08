@@ -130,3 +130,12 @@ button.cross:active{
   display: block;
   padding-top: 100px;
 }
+
+#progress-bar {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
