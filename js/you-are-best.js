@@ -34,9 +34,9 @@ $(".question-container img").attr("src", "img/" + window.location.hash.replace(/
 
 $(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger     🤠")
 
-$(".tagtile").text(window.location.hash == "#img1" ? "Every tap helps our rangers stop poachers" : "You are now a Persistent Patroller")
+$(".tagtile").text(window.location.hash == "#img1" ? "Every tap helps our rangers stop poachers" : "🎉 You are now a Persistent Patroller 🎆🎇")
 
-//$(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger     🤠")
+$(".tagtile").css("font-size", window.location.hash == "#img1" ? 30 : 42)
 
 
 var circle = new ProgressBar.Circle('#progress-bar', {
