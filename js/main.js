@@ -1,10 +1,12 @@
 window.onload = function() {
-    document.getElementById("tick-button").onclick = function fun() {
-      window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
-    }
+    if(document.getElementById("tick-button")) {
+      document.getElementById("tick-button").onclick = function fun() {
+        window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
+      }
 
-    document.getElementById("cross-button").onclick = function fun() {
-      window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
+      document.getElementById("cross-button").onclick = function fun() {
+        window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
+      }
     }
 }
 
@@ -13,6 +15,7 @@ Notification.requestPermission(function(result) {
   if (result === 'granted') {
     navigator.serviceWorker.ready.then(function(registration) {
       registration.showNotification('We have a mission for you!', {
+        tag: "mission",
         requireInteraction: true,
         badge: '../img/icon.png',
         icon: '../img/icon.png',
@@ -21,9 +24,10 @@ Notification.requestPermission(function(result) {
   }
 });
 
-if(window.location.hash == "") {
-  window.location.hash = "img1"
+if(window.location.hash.replace(/#/, "") == "") {
+window.location.hash = "#img1"
 }
 
+$(".wrapper a").attr("href", `/#${window.location.hash == "#img1" ? "img2" : "img1"}`)
 
 $(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");
