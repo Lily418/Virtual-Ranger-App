@@ -80,3 +80,33 @@ body {
   width: auto;
   padding: 10px;
 }
+
+button {
+  -webkit-appearance:none;
+  border-width: 0px;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  outline: none;
+}
+
+button.tick {
+  margin-top: 20px;
+  background-image: url("../img/tick.png");
+  width: 70px;
+  height: 70px;
+}
+
+button.tick:active{
+  background-image: url("../img/tick-invert.png");  
+}
+
+button.cross {
+  background-image: url("../img/cross.png");
+  width: 75px;
+  height: 75px;
+}
+
+button.cross:active{
+  background-image: url("../img/cross-invert.png");  
+}

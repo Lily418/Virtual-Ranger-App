@@ -1,3 +1,13 @@
+window.onload = function() {
+    document.getElementById("tick-button").onclick = function fun() {
+        alert("hello");
+    }
+
+    document.getElementById("cross-button").onclick = function fun() {
+        alert("hello");
+    }
+}
+
 navigator.serviceWorker.register('sw.js');
 Notification.requestPermission(function(result) {
   if (result === 'granted') {
