@@ -90,7 +90,7 @@ body {
 
 .menu {
   position: absolute;
-  bottom: -75;
+  bottom: 0;
   height: 75px;
 }
 
