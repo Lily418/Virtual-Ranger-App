@@ -32,9 +32,9 @@ $(".wrapper a").attr("href", `/#${window.location.hash == "#img1" ? "img2" : "im
 
 $(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");
 
-$(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger     🤠")
+$(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger 🤠")
 
-$(".tagtile").text(window.location.hash == "#img1" ? "Every tap helps our rangers stop poachers" : "You are now a Persistent Patroller 🎉")
+$(".tagtile").text(window.location.hash == "#img1" ? "Every tap helps our rangers stop poachers" : "You're are a Persistent Patroller 🎉")
 
 $(".tagtile").css("font-size", window.location.hash == "#img1" ? 30 : 42)
 
