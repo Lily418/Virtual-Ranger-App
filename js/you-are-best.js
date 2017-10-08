@@ -32,7 +32,9 @@ $(".wrapper a").attr("href", `/#${window.location.hash == "#img1" ? "img2" : "im
 
 $(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");
 
-$(".level").text(`${window.location.hash == "#img1" ? "You are now a Persistent Patroller" : "You are now Chief Ranger"}`)
+$(".level").text(window.location.hash == "#img1" ? "Thank You Ranger!"  : "Congratulations Ranger     🤠")
+
+$(".tagtile").text(window.location.hash == "#img1" ? "" : "You are now a Persistent Patroller")
 
 var circle = new ProgressBar.Circle('#progress-bar', {
   color: 'black',
@@ -43,7 +45,7 @@ var circle = new ProgressBar.Circle('#progress-bar', {
     autoStyleContainer: true
   },
   easing: 'easeInOut',
-  strokeWidth: 6,
+  strokeWidth: 10,
   from: {color: '#FFEA82', a:0},
   to: {color: '#C1EF64', a:1},
   // Set default step function for all animate calls
@@ -59,4 +61,4 @@ var circle = new ProgressBar.Circle('#progress-bar', {
   }
 });
 
-window.location.hash == "#img1" ? circle.animate(0.4) : circle.animate(0.7)
+window.location.hash == "#img1" ? circle.animate(0.4) : circle.animate(1.0)

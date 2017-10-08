@@ -31,5 +31,3 @@ window.location.hash = "#img1"
 $(".wrapper a").attr("href", `/#${window.location.hash == "#img1" ? "img2" : "img1"}`)
 
 $(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");
-
-$(".level").text(`${window.location.hash == "#img1" ? "You are now a Persistent Patroller" : "You are now Chief Ranger"}`)
