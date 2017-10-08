@@ -1,10 +1,10 @@
 window.onload = function() {
     document.getElementById("tick-button").onclick = function fun() {
-      window.location.href = "/you_are_the_best.html";
+      window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
     }
 
     document.getElementById("cross-button").onclick = function fun() {
-      window.location.href = "/you_are_the_best.html";
+      window.location.href = "/you_are_the_best.html#" + window.location.hash.replace(/#/, "");
     }
 }
 
@@ -20,3 +20,10 @@ Notification.requestPermission(function(result) {
     });
   }
 });
+
+if(window.location.hash == "") {
+  window.location.hash = "img1"
+}
+
+
+$(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");

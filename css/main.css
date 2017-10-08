@@ -119,3 +119,14 @@ button.cross:active{
 .best-container {
   padding-right: 0;
 }
+
+.next-button {
+  font-size: 48px;
+  width: 70%;
+}
+
+.wrapper {
+  text-align: center;
+  display: block;
+  padding-top: 100px;
+}
