@@ -1,24 +1,19 @@
-self.addEventListener('notificationclick', function(event) {  
-  console.log('On notification click: ', event.notification.tag);  
-  // Android doesn't close the notification when you click on it  
-  // See: http://crbug.com/463146  
-  event.notification.close();
+// serviceworker.js
+self.addEventListener('notificationclick', function(event) {
+    // Close notification.
+    event.notification.close();
 
-  // This looks to see if the current is already open and  
-  // focuses if it is  
-  event.waitUntil(
-    clients.matchAll({  
-      type: "window"  
-    })
-    .then(function(clientList) {  
-      for (var i = 0; i < clientList.length; i++) {  
-        var client = clientList[i];  
-        if (client.url == '/' && 'focus' in client)  
-          return client.focus();  
-      }  
-      if (clients.openWindow) {
-        return clients.openWindow('https://deanhume.github.io/typography');  
-      }
-    })
-  );
+    // Example: Open window after 3 seconds.
+    // (doing so is a terrible user experience by the way, because
+    //  the user is left wondering what happens for 3 seconds.)
+    var promise = new Promise(function(resolve) {
+        setTimeout(resolve, 3000);
+    }).then(function() {
+        // return the promise returned by openWindow, just in case.
+        // Opening any origin only works in Chrome 43+.
+        return clients.openWindow('https://example.com');
+    });
+
+    // Now wait for the promise to keep the permission alive.
+    event.waitUntil(promise);
 });
