@@ -1,10 +1,10 @@
 window.onload = function() {
     document.getElementById("tick-button").onclick = function fun() {
-        alert("hello");
+      window.location.href = "/you_are_the_best.html";
     }
 
     document.getElementById("cross-button").onclick = function fun() {
-        alert("hello");
+      window.location.href = "/you_are_the_best.html";
     }
 }
 

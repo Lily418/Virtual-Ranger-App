@@ -110,3 +110,8 @@ button.cross {
 button.cross:active{
   background-image: url("../img/cross-invert.png");  
 }
+
+.emoji-parade {
+  font-size: 70px;
+  float:right;
+}
