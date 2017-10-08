@@ -115,3 +115,7 @@ button.cross:active{
   font-size: 70px;
   float:right;
 }
+
+.best-container {
+  padding-right: 0;
+}
