@@ -32,9 +32,12 @@ $(".wrapper a").attr("href", `/#${window.location.hash == "#img1" ? "img2" : "im
 
 $(".question-container img").attr("src", "img/" + window.location.hash.replace(/#/, "") + ".jpg");
 
-$(".level").text(window.location.hash == "#img1" ? "Thank You Ranger!"  : "Congratulations Ranger     🤠")
+$(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger     🤠")
 
-$(".tagtile").text(window.location.hash == "#img1" ? "" : "You are now a Persistent Patroller")
+$(".tagtile").text(window.location.hash == "#img1" ? "Every tap helps our rangers stop poachers" : "You are now a Persistent Patroller")
+
+//$(".level").text(window.location.hash == "#img1" ? "Great Work!"  : "Congratulations Ranger     🤠")
+
 
 var circle = new ProgressBar.Circle('#progress-bar', {
   color: 'black',

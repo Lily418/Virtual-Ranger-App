@@ -128,14 +128,26 @@ button.cross:active{
 .wrapper {
   text-align: center;
   display: block;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #progress-bar {
+  padding: 10px;
   height: 100px;
   width: 100px;
   display: block;
   margin-left: auto; 
   margin-right: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tagtile {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.promotion {
+  font-size: 24px;
 }
