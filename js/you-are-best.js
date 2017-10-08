@@ -64,4 +64,4 @@ var circle = new ProgressBar.Circle('#progress-bar', {
   }
 });
 
-window.location.hash == "#img1" ? circle.animate(0.4) : circle.animate(1.0)
+window.location.hash == "#img1" ? circle.animate(0.5) : circle.animate(1.0)
